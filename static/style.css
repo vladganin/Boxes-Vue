@@ -1,0 +1,91 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+}
+
+/* Central container for the application */
+.container {
+  width: 50vw;
+  height: 70vh;
+  margin-top: 10vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+/* Logo and the name of the app */
+.sub_container {
+  margin: 0 auto;
+  width: 50%;
+  padding: 1%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .sub_container {
+    font-size: 1.5rem;
+  }
+}
+
+.sub_container span {
+  margin-left: 1vw;
+  position: relative;
+  bottom: 0.2vh;
+}
+
+/* Boxes below logo */
+.container .boxes {
+  margin-top: 10vh;
+  width: 100%;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .box {
+  width: 20%;
+  background-color: lightgrey;
+  border-color: #e6eeff;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-align: center;
+}
+
+.container .box:hover {
+  background-color: yellow;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.container .box p {
+  font: Tahoma;
+  font-size: 1.6rem;
+  color: black;
+  text-align: center;
+  margin: 25% auto;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Color Boxes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="static/normalize.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="sub_container">
+                <div class="logo"><i class="fas fa-box-open logo"></i>
+                <span class="logo_text">Boxes? Boxes!</span>
+            </div>
+            <div class="boxes">
+                <div class="box" id="vueBox" v-on:click="color() || circle()"><p id="box_1">click to set blue</div>
+                <div class="box" id="vueBox2" v-on:click="circle()"><p id="box_2">click to make circle</p></div>
+                <div class="box" id="vueBox3" v-on:click="reloading()"><p>reload page</p></div>
+                <div class="box" id="vueBox4" v-on:click="removeBoxes()"><p>click to remove boxes on the left</p></div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        <script src="app.js" async defer></script>
+    </body>
+</html>
